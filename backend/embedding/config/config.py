@@ -14,4 +14,7 @@ class Config:
     MODEL_NAME = os.getenv("MODEL_NAME")
 
     # Collection name  / Table name in database
-    COLLECTION_NAME = os.getenv("COLLECTION_NAME")
+    COLLECTION_NAME = os.getenv("COLLECTION_NAME", "CHAT_BOT_COLLECTION")
+
+    # Vector Size
+    VECTOR_SIZE = 128
